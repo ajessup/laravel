@@ -1,4 +1,5 @@
 <?php
+use \google\appengine\api\app_identity\AppIdentityService;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,6 @@
 if (!function_exists('gethostname')) {
 	if(file_exists('google/appengine/api/app_identity/AppIdentityService.php')){
 		require_once 'google/appengine/api/app_identity/AppIdentityService.php';
-		use \google\appengine\api\app_identity\AppIdentityService;
 		function gethostname() {
 			return AppIdentityService::getApplicationId();
 		}
@@ -24,6 +24,7 @@ if (!function_exists('gethostname')) {
 		}
 	}
 }
+
 
 /*
 |--------------------------------------------------------------------------

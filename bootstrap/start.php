@@ -11,13 +11,18 @@
 |
 */
 
-require_once 'google/appengine/api/app_identity/AppIdentityService.php'
-use \google\appengine\api\app_identity\AppIdentityService;
-
 if (!function_exists('gethostname')) {
-    function gethostname() {
-        return AppIdentityService::getApplicationId();
-    }
+	if(file_exists('google/appengine/api/app_identity/AppIdentityService.php')){
+		require_once 'google/appengine/api/app_identity/AppIdentityService.php';
+		use \google\appengine\api\app_identity\AppIdentityService;
+		function gethostname() {
+			return AppIdentityService::getApplicationId();
+		}
+	}else{
+		function gethostname() {
+			return 'unknown';
+		}
+	}
 }
 
 /*

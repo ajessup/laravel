@@ -2,6 +2,26 @@
 
 /*
 |--------------------------------------------------------------------------
+| define gethostname()
+|--------------------------------------------------------------------------
+|
+| Some versions of the PHP interpreter shipped with the App Engine SDK do
+| not implement the gethostname() function, so we provide a stub implementation
+| here
+|
+*/
+
+require_once 'google/appengine/api/app_identity/AppIdentityService.php'
+use \google\appengine\api\app_identity\AppIdentityService;
+
+if (!function_exists('gethostname')) {
+    function gethostname() {
+        return AppIdentityService::getApplicationId();
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
 | Create The Application
 |--------------------------------------------------------------------------
 |

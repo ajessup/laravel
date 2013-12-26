@@ -37,7 +37,7 @@ if (!function_exists('gethostname')) {
 |
 */
 
-$app = new Illuminate\Foundation\Application;
+$app = new Ajessup\GaeLaravel\Application;
 
 /*
 |--------------------------------------------------------------------------

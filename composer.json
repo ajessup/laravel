@@ -3,8 +3,15 @@
 	"description": "The Laravel Framework.",
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/ajessup/gae-laravel"
+		}
+	],
 	"require": {
-		"laravel/framework": "4.1.*"
+		"laravel/framework": "4.1.*",
+		"ajessup/gae-laravel": "dev"
 	},
 	"autoload": {
 		"classmap": [

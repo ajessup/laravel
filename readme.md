@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/ajessup/laravel/version.png)](https://packagist.org/packages/ajessup/laravel) [![Total Downloads](https://poser.pugx.org/ajessup/laravel/d/total.png)](https://packagist.org/packages/ajessup/laravel)
 
-The wonderful Laravel Framework, lightly tweaked to run well on [Google App Engine](https://cloud.google.com/products/app-engine/) out of the box
+The wonderful Laravel 4 Framework, [lightly tweaked](https://github.com/ajessup/laravel/compare) to run well on [Google App Engine](https://cloud.google.com/products/app-engine/) out of the box
 
 ## Usage
 

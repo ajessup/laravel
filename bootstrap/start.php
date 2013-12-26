@@ -37,7 +37,7 @@ if (!function_exists('gethostname')) {
 |
 */
 
-$app = new Ajessup\GaeLaravel\Application;
+$app = new Ajessup\GaeLaravel\GaeApplication;
 
 /*
 |--------------------------------------------------------------------------

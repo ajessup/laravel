@@ -8,7 +8,7 @@ The wonderful Laravel 4 Framework, [lightly tweaked](https://github.com/ajessup/
 
 Ensure you have downloaded and installed the latest [Google App Engine for PHP SDK](https://developers.google.com/appengine/downloads) and [Composer](http://getcomposer.org/). Then create a new project by running this command from your terminal:
 
-    composer create-project ajessup/laravel your-project-name --prefer-dist
+    composer create-project ajessup/laravel your-project-name -s dev
 
 This will create a default project shell including the necessary configuration files. You can start the project the App Engine launcher or via the `dev_appserver.py` command included in the App Engine SDK:
 

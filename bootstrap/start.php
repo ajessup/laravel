@@ -50,11 +50,14 @@ $app = new Ajessup\GaeLaravel\GaeApplication;
 |
 */
 
-$env = $app->detectEnvironment(array(
-
-	'local' => array('your-machine-name'),
-
-));
+$env = $app->detectEnvironment(function()
+{
+	if(isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'],'Google App Engine') !== false) {
+		return 'appengine';
+	}else{
+		return 'local';
+	}
+});
 
 /*
 |--------------------------------------------------------------------------

@@ -11,7 +11,7 @@
 	],
 	"require": {
 		"laravel/framework": "4.1.*",
-		"ajessup/gae-laravel": "dev"
+		"ajessup/gae-laravel": "*"
 	},
 	"autoload": {
 		"classmap": [

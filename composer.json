@@ -1,14 +1,8 @@
 {
 	"name": "ajessup/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"description": "The Laravel Framework optimized for Google App Engine",
+	"keywords": ["framework", "laravel", "app engine", "GAE"],
 	"license": "MIT",
-	"repositories": [
-		{
-			"type": "vcs",
-			"url": "https://github.com/ajessup/gae-laravel.git"
-		}
-	],
 	"require": {
 		"laravel/framework": "4.1.*",
 		"ajessup/gae-laravel": "dev-master"
@@ -25,14 +19,14 @@
 	},
 	"scripts": {
 		"post-install-cmd": [
-			"php.py artisan optimize"
+			"php artisan optimize"
 		],
 		"post-update-cmd": [
-			"php.py artisan clear-compiled",
-			"php.py artisan optimize"
+			"php artisan clear-compiled",
+			"php artisan optimize"
 		],
 		"post-create-project-cmd": [
-			"php.py artisan key:generate"
+			"php artisan key:generate"
 		]
 	},
 	"config": {

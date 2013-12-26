@@ -6,12 +6,12 @@
 	"repositories": [
 		{
 			"type": "vcs",
-			"url": "https://github.com/ajessup/gae-laravel"
+			"url": "https://github.com/ajessup/gae-laravel.git"
 		}
 	],
 	"require": {
 		"laravel/framework": "4.1.*",
-		"ajessup/gae-laravel": "*"
+		"ajessup/gae-laravel": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
